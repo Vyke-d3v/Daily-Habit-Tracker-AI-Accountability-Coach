@@ -12,22 +12,29 @@ function Header (){
                 const hasCheckedIn = localStorage.getItem('checkin_'+ now.toDateString());
                 
                 if(hasCheckedIn) {
-                    setLabel('Checked in · ${day}');
+                    setLabel(`Checked in · ${day}`);
                 }
-                else if (hours < 23) {
+                else if (hour < 23) {
                     const hoursLeft=23-hour;
-                    setLabel('${day} . ${hoursLeft}h to check in');
+                    setLabel(`${day} . ${hoursLeft}h to check in`);
                 }
             else{
-                setLabel
+                setLabel(`Last chance to check in today! ${day}`);
             }
-            }
-        })
+        };
+        update();
+        const interval = setInterval(update,60000);
+        return () => clearInterval(interval);
+        }, []);
+
+
+
     return (
         <>
                 <header>
                     <img src={logo} alt="Logo icon" />
                     <h1>Echocoach.ai</h1>
+                    <span className='Checkin-Pill'>{label}</span>
                     <a href="dashboard">Dashboard</a>
                     <a href="coachjournal">Coach Journal</a>
                     <a href="habits">Habits</a>
