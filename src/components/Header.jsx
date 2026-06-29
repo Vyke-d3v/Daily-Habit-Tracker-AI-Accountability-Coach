@@ -1,6 +1,7 @@
 import { Breadcrumbs } from '@heroui/react';
 import { useEffect, useState } from 'react';
-import logo from '../assets/full-logo.png'
+import "../styles/header.css";
+import logo from '../assets/iconneew.png'
 
 function Header (){
         const [label,setLabel]= useState ('');
@@ -33,13 +34,21 @@ function Header (){
     return (
         <>
                 <header>
-                    <img src={logo} alt="Logo icon" />
-                    <h1>Echocoach.ai</h1>
-                    <span className='Checkin-Pill'>{label}</span>
-                    <a href="dashboard">Dashboard</a>
-                    <a href="coachjournal">Coach Journal</a>
-                    <a href="habits">Habits</a>
-                    <a href=""></a>
+                    <div className='h34d3r'>
+                        <div className='im4g3'>
+                            <img src={logo} alt="Logo icon" />
+                        </div>
+                        <div className='7i7l3'>
+                            {/* <h1>Echocoach.ai</h1> */}
+                        </div>
+                        <span className='Checkin-Pill'>{label}</span>
+                        <div className='h34d3r-l1nk5'>
+                            <a href="dashboard">Dashboard</a>
+                            <a href="coachjournal">Coach Journal</a>
+                            <a href="habits">Habits</a>
+                            <a href=""></a>
+                        </div>
+                    </div>
                 </header>
         </>
     )
