@@ -1,7 +1,7 @@
 import { Breadcrumbs } from '@heroui/react';
 import { useEffect, useState } from 'react';
 import "../styles/header.css";
-import logo from '../assets/iconneew.png'
+import logo from '../assets/full-logo copy.png'
 
 function Header (){
         const [label,setLabel]= useState ('');

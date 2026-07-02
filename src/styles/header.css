@@ -3,14 +3,20 @@ header{
     flex-direction: row; */
     max-width: auto;
     flex-wrap: nowrap;
-    background-color: rgb(243, 240, 196);
+    background-color: rgb(252, 233, 233);
+    border-radius: 0px 0px 25px 25px;
+    border: 0.56vh solid rgba(33, 80, 6, 0.596);
+    box-shadow: inset;
 }
 header img{
-    height: 70px;
-    width: 70px;
-    mix-blend-mode: multiply;
+    height: 20%, auto;
+    position: relative;
+    width: 50%;
+    /* mix-blend-mode: color; */
+    /* margin-left: -5rem; */
+    padding: -5rem;
 }
-.h34d3r{
+    .h34d3r{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,4 +33,7 @@ header img{
     /* flex-direction: row; */
     align-items: center;
     justify-content: space-around;
+    background-color: rgba(5, 59, 22, 0.63);
+    color: rgb(6, 8, 24);
+    margin: 1vh;
 }
