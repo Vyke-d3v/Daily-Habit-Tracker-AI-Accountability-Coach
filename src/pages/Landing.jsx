@@ -1,4 +1,4 @@
-function Dashboard(){
+function Landing(){
     return(
         <div>
             <h1>Dashboard</h1>
@@ -13,4 +13,4 @@ function Dashboard(){
     )
 }
 
-export default Dashboard;
+export default Landing;

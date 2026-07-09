@@ -34,19 +34,19 @@ function Header (){
     return (
         <>
                 <header>
-                    <div className='h34d3r'>
-                        <div className='im4g3'>
-                            <img src={logo} alt="Logo icon" />
+                    <div className='header wrap'>
+                        <div className='header-Logo'>
+                            <img src={logo} alt="Echocoach logo" />
                         </div>
-                        <div className='7i7l3'>
+                        <div className='Ti7l3'>
                             {/* <h1>Echocoach.ai</h1> */}
                         </div>
                         <span className='Checkin-Pill'>{label}</span>
-                        <div className='h34d3r-l1nk5'>
-                            <a href="dashboard">Dashboard</a>
-                            <a href="coachjournal">Coach Journal</a>
-                            <a href="habits">Habits</a>
-                            <a href=""></a>
+                        <div className='header-links'>
+                            <Link to="/dashboard">Dashboard</Link>
+                            <Link to="/coachjournal">Coach Journal</Link>
+                            <Link to="/habits">Habits</Link>
+                            <Link to=""></Link>
                         </div>
                     </div>
                 </header>
