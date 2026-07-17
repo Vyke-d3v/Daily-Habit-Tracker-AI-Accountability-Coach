@@ -1,5 +1,3 @@
-import { Breadcrumbs } from '@heroui/react';
-import { Segment } from '@heroui/react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/header.css";
@@ -36,15 +34,11 @@ function Header (){
     return (
         <>
                 <header>
-                    <Segment>
-                        <Segment.Item id='Monthly'>Monthly</Segment.Item>
-                        <Segment.Item id='Yearly'>Yearly</Segment.Item>
-                    </Segment>
                     <div className='header wrap'>
                         <div className='header-Logo'>
-                            <img src={logo} alt="Echocoach logo" />
+                            <h1>DAILY HABIT TRACKER</h1>
                         </div>
-                        <div className='Ti7l3'>
+                        <div className='Title'>
                             {/* <h1>Echocoach.ai</h1> */}
                         </div>
                         <span className='Checkin-Pill'>{label}</span>
@@ -52,7 +46,9 @@ function Header (){
                             <Link to="/dashboard">Dashboard</Link>
                             <Link to="/coachjournal">Coach Journal</Link>
                             <Link to="/habits">Habits</Link>
-                            <Link to=""></Link>
+                            <Link to="/profile">
+                            <i className="fa-solid fa-user"></i>
+                            </Link>
                         </div>
                     </div>
                 </header>
