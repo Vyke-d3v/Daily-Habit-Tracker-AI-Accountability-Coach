@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Login (){
     return(
         <>
@@ -17,10 +18,9 @@ function Login (){
                 </form>
 
             </div>
-            <div className="log-in-alt">
-                <h4>Or</h4>
-                <p>Continue With Google.</p>
-                <p>You don't have an account? <a href="register">Register</a></p>
+            <div className="loginAlt">
+                <p>Or <br/> Continue With Google.</p>
+                <p>You don't have an account? <Link to="register">Register</Link></p>
             </div>
         </>
     );

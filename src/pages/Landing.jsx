@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 function Landing(){
     return(
-        <div>
+        <div className="Landingcomponent">
+            
             {/* <h1>Dashboard</h1> */}
-            <p>Welcome to Daily Habit Tracker!</p>
-            <p> A digital performance journal where users log daily habits and write a brief text
-                entry checking in, receiving personalized coaching and habit analysis from an AI.</p>
+            <p>Welcome to Daily Habit Tracker!
+             A digital performance journal where users log daily habits and write a brief text
+             entry checking in, receiving personalized coaching and habit analysis from an AI.
+            </p>
 
-            <div>
+            <div className="getStartedBUtton">
                 {/* <a href="register">GET STARTED</a> */}
                 <Link to="/register">GET STARTED</Link>
             </div>
