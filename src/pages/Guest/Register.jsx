@@ -19,11 +19,10 @@
                                 <input type="password" name="user-password" id="user-password" placeholder="Eg. echocoach@2026" />
                             </form>
                             <div className="Register-alt">
-                                <h4>Or</h4>
-                                <p>Continue With Google.</p>
+                                <p>Or <br />Continue With Google.</p>
                                 <span></span>
                                 <span></span>
-                                <p>Already have an account? <a href="login"> Log in</a></p>
+                                <p>Already have an account? <Link to="login"> Log in</Link></p>
                             </div>
                         </div>
                         </>
