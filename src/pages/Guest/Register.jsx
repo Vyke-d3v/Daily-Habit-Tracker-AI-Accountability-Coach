@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 
 
                 function Register(){
@@ -11,7 +11,7 @@
                         </div>
                         <div className="Registration-form">
                             <form action="Register">
-                                <label htmlFor="name">Name</label>
+                                <label htmlFor="name">Username</label>
                                 <input type="text" name="user-name" id="user-name" placeholder="Eg. Vyke Muriithi"/>
                                 <label htmlFor="email">Email</label>
                                 <input type="email" name="user-email" id="user-email" placeholder="Eg. muriithivyke@gmail.com" />
