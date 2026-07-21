@@ -43,11 +43,14 @@ function Header (){
                         </div>
                         <span className='Checkin-Pill'>{label}</span>
                         <div className='header-links'>
-                            <Link to="/dashboard">Dashboard</Link>
-                            <Link to="/coachjournal">Coach Journal</Link>
-                            <Link to="/habits">Habits</Link>
+                            <Link to="/landing"><i class="fa-solid fa-house"></i>Home</Link>
+                            <span> | </span>
+                            <Link to="/coachjournal"><i class="fa-solid fa-book-journal-whills"></i>Coach Journal</Link>
+                            <span> | </span>
+                            <Link to="/habits"><i class="fa-solid fa-list-check"></i>Habits</Link>
+                            <span> | </span>
                             <Link to="/profile">
-                            <i className="fa-solid fa-user"></i>
+                            <i className="fa-solid fa-user"></i> Profile
                             </Link>
                         </div>
                     </div>
