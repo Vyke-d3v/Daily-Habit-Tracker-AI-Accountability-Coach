@@ -2,7 +2,7 @@
 function Coach(){
     return(
         <>
-        <h2>COACH</h2>
+        <h2>Coach</h2>
         </>
     )
 }
