@@ -14,7 +14,7 @@ import { useState } from "react";
                     <label htmlFor="name">Username</label>
                     <input type="text" name="user-name" id="user-name" placeholder="Eg. Vyke Muriithi"/>
                     <label htmlFor="email">Email</label>
-                    <input type="email" name="user-email" id="user-email" placeholder="Eg. muriithivyke@gmail.com" />
+                    <input type="email" name="user-email" id="user-email" placeholder="Eg. muriithivyke@gmail.com" required />
                     <label htmlFor="password">Password</label>
                     <input type="password" name="user-password" id="user-password" placeholder="Eg. echocoach@2026" />
                 </form>
