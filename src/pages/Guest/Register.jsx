@@ -2,6 +2,25 @@ import { useState } from "react";
 
 
     function Register(){
+
+        const ValidateForm =() => {
+            const errors={}
+
+            if (!username.trim()){
+                errors.username=" Enter a valid Username"
+            }
+            if (email.trim()){
+                errors.email="Enter a valid Email."
+            }
+            if (!password){
+                errors.password="The password is not valid."
+            }
+            else if(!password){
+                errors.password="The password must have more than 4 characters"
+            }
+
+            return errors
+        }
         
         return(
             <>
