@@ -28,6 +28,7 @@ import { useState } from "react";
                 <h3>Create Your Account</h3>
                 <p>Start tracking your daily Habits.</p>
             </div>
+            {/* Created a Registration form */}
             <div className="Registration-form">
                 <form action="Register">
                     <label htmlFor="name">Username</label>
