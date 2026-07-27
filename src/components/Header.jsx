@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { RangeCalendarNavButton } from '@heroui/react';
 import { Link } from 'react-router-dom';
 import "../styles/header.css";
 import logo from '../assets/full-logo copy.png'
@@ -40,7 +41,9 @@ function Header (){
                         <div className='Title'>
                             {/* <h1>Echocoach.ai</h1> */}
                         </div>
-                        <span className='Checkin-Pill'>{label}</span>
+                        <RangeCalendarNavButton>
+                            <span className='Checkin-Pill'>{label}</span>
+                        </RangeCalendarNavButton>
                         <div className='header-links'>
                             <Link to="/landing"><i class="fa-solid fa-house"></i>Home</Link>
                             <span> | </span>

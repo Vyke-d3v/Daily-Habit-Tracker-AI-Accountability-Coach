@@ -1,7 +1,13 @@
-import { useState } from "react";
+// "use client";
+// import { CalendarNavButton } from "@heroui/react";
+// import { Button } from "@heroui/react";
+import { Link } from "react-router-dom";
+// import { useState } from "react";
 
 
     function Register(){
+
+    const {se}
 
 // create a validation
         const ValidateForm =() => {
@@ -32,15 +38,18 @@ import { useState } from "react";
 {/* Created a Registration form */}
             <div className="Registration-form">
                 <form action="Register">
-                    <label htmlFor="name">Username</label>
-                    <input type="text" name="user-name" id="user-name" placeholder="Eg. Vyke Muriithi"/>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="user-email" id="user-email" placeholder="Eg. muriithivyke@gmail.com" required />
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="name">Name.</label>
+                    <input type="text" name="name" id="name" placeholder="Eg. Echo Coach"/>
+                    <label htmlFor="email">Email.</label>
+                    <input type="email" name="user-email" id="user-email" placeholder="Eg. echocoach@gmail.com" required />
+                    <label htmlFor="password">Password.</label>
                     <input type="password" name="user-password" id="user-password" placeholder="Eg. echocoach@2026" />
+                    <Button type="submit">
+                        Submit
+                    </Button>
                 </form>
                 <div className="Register-alt">
-                    <p>Or <br />Continue With Google.</p>
+                    <button type="button">Continue With Google.</button>
                     <span></span>
                     <span></span>
                     <p>Already have an account? <Link to="login"> Log in</Link></p>
