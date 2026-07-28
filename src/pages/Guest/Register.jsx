@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
     function Register(){
 
-    const {se}
+    const {setvalues, }
 
 // create a validation
         const ValidateForm =() => {
@@ -22,8 +22,8 @@ import { Link } from "react-router-dom";
             if (!password){
                 errors.password="The password is not valid."
             }
-            else if(!password){
-                errors.password="The password must have more than 4 characters"
+            else if(!password.length<6){
+                errors.password="The password must have more than 6 characters"
             }
 
             return errors
@@ -44,6 +44,7 @@ import { Link } from "react-router-dom";
                     <input type="email" name="user-email" id="user-email" placeholder="Eg. echocoach@gmail.com" required />
                     <label htmlFor="password">Password.</label>
                     <input type="password" name="user-password" id="user-password" placeholder="Eg. echocoach@2026" />
+                    description
                     <Button type="submit">
                         Submit
                     </Button>
