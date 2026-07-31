@@ -1,20 +1,30 @@
 // "use client";
 // import { CalendarNavButton } from "@heroui/react";
-// import { Button } from "@heroui/react";
+import { Button } from "@heroui/react";
 import { Link } from "react-router-dom";
-// import { useState } from "react";
+import { useState } from "react";
 
 
     function Register(){
 
-    const {setvalues, }
+    const [formData, setFormData] = useState({
+        username:"",
+        email:"",
+        password:"",
+    })
+    
+    const [error, setError] = useState({});
+
+    const handleChanges = (e) => {
+        const { name, value }
+    }
 
 // create a validation
         const ValidateForm =() => {
             const errors={}
 
             if (!username.trim()){
-                errors.username=" Enter a valid Username"
+                errors.name=" Enter a valid Username"
             }
             if (email.trim()){
                 errors.email="Enter a valid Email."
@@ -22,7 +32,7 @@ import { Link } from "react-router-dom";
             if (!password){
                 errors.password="The password is not valid."
             }
-            else if(!password.length<6){
+            else if(password.length<6){
                 errors.password="The password must have more than 6 characters"
             }
 
@@ -37,9 +47,9 @@ import { Link } from "react-router-dom";
             </div>
 {/* Created a Registration form */}
             <div className="Registration-form">
-                <form action="Register">
-                    <label htmlFor="name">Name.</label>
-                    <input type="text" name="name" id="name" placeholder="Eg. Echo Coach"/>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="name">username.</label>
+                    <input type="text" value={formData.username} onChange={handleChange} name="username" id="username" placeholder="Eg. Echocoach_2026"/>
                     <label htmlFor="email">Email.</label>
                     <input type="email" name="user-email" id="user-email" placeholder="Eg. echocoach@gmail.com" required />
                     <label htmlFor="password">Password.</label>
