@@ -112,7 +112,7 @@ function Register() {
               <FieldError />
             </TextField>
 
-            <Button type="submit" fullWidth variant="solid" color="primary">
+            <Button type="submit" fullWidth variant="solid" color="secondary">
               Submit
             </Button>
           </form>
