@@ -19,6 +19,7 @@ export function AuthProvider({children}){
         <AuthContext.Provider value={{user,loading}}>
             {!loading  && children}
         </AuthContext.Provider>
-    )
-    }
+    );
 }
+
+export const useAuth=()=> useContext(AuthContext);
