@@ -5,39 +5,19 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, House,BookOpenText, ListChecks, User } from 'lucide-react';
-import useCheckinLabel from '../hooks/'
+import useCheckinLabel from '../hooks/useCheckinLabel'
 import logo from '../assets/full-logo copy.png';
 
 const navLinks = [
     {to:'/landing', label:'Home', icon: House},
-]
+    {to: '/coachjournal', label: 'Coach Journal', icon: BookOpenText},
+    {to: '/habits', label: 'Habits', icon: ListChecks},
+    {to: '/profile', label: 'Profile', icon: User}
+];
 
 function Header (){
-        const [label,setLabel]= useState ('');
-
-        useEffect (()=> {
-            const update =()=>{
-                const now = new Date();
-                const hour = now.getHours();
-                const day = now.toLocaleDateString('en-GB', {weekday: 'short', day: 'numeric', month: 'short'});
-                const hasCheckedIn = localStorage.getItem('checkin_'+ now.toDateString());
-                
-                if(hasCheckedIn) {
-                    setLabel(`Checked in · ${day}`);
-                }
-                else if (hour < 23) {
-                    const hoursLeft=23-hour;
-                    setLabel(`${day} . ${hoursLeft}h to check in`);
-                }
-            else{
-                setLabel(`Last chance to check in today! ${day}`);
-            }
-        };
-        update();
-        const interval = setInterval(update,60000);
-        return () => clearInterval(interval);
-        }, []);
-
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const label = useCheckinLabel
 
     return (
         <>
