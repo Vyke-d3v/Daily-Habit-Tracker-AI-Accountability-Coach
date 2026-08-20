@@ -1,8 +1,16 @@
-import { useEffect, useState } from 'react';
-import { RangeCalendarNavButton } from '@heroui/react';
+// import { useEffect, useState } from 'react';
+// import { RangeCalendarNavButton } from '@heroui/react';
+// import "../styles/header.css";
+
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import "../styles/header.css";
-import logo from '../assets/full-logo copy.png'
+import { Menu, X, House,BookOpenText, ListChecks, User } from 'lucide-react';
+import useCheckinLabel from '../hooks/'
+import logo from '../assets/full-logo copy.png';
+
+const navLinks = [
+    {to:'/landing', label:'Home', icon: House},
+]
 
 function Header (){
         const [label,setLabel]= useState ('');
