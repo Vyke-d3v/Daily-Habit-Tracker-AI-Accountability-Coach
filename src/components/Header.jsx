@@ -17,32 +17,30 @@ const navLinks = [
 
 function Header (){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const label = useCheckinLabel
+    const label = useCheckinLabel();
 
     return (
         <>
-                <header>
-                    <div className='header wrap'>
-                        <div className='header-Logo'>
-                            <h1>DAILY HABIT TRACKER</h1>
-                        </div>
-                        <div className='Title'>
-                            {/* <h1>Echocoach.ai</h1> */}
-                        </div>
-                        <RangeCalendarNavButton>
-                            <span className='Checkin-Pill'>{label}</span>
-                        </RangeCalendarNavButton>
-                        <div className='header-links'>
-                            <Link to="/landing"><i class="fa-solid fa-house"></i>Home</Link>
-                            <span> | </span>
-                            <Link to="/coachjournal"><i class="fa-solid fa-book-journal-whills"></i>Coach Journal</Link>
-                            <span> | </span>
-                            <Link to="/habits"><i class="fa-solid fa-list-check"></i>Habits</Link>
-                            <span> | </span>
-                            <Link to="/profile">
-                            <i className="fa-solid fa-user"></i> Profile
-                            </Link>
-                        </div>
+                <header className='sticky top-0 z-40 w-full border-b border-neutral-800vbg-neutral-950/80 backdrop-blur-1g'>
+                    <div className='mx-auto flex h-16 max-w-6xl items-center justify-between px-4'>
+                        <img src= {logo} alt="Daily Habit Tracker" className='h-8' />
+
+                        <span className='hidden rounded-full bg-neutral-800 px-3 py-1 text-sm text-neutral-200 sm:inline-block'>
+                            {label}
+                        </span>
+
+                        <nav className='hidden items-center gap-6 md:flex'>
+                            {navLinks.map(({to,label,icon: Icon}) =>(
+                                <Link key={{to} to={to} className='flex items-center gap-2 text-sm text-neutral-300 hover:text-white' }vl>
+                                    <Icon size={16}/>
+                                    {label}
+                                </Link>
+                            ))}
+
+                        </nav>
+
+                        
+
                     </div>
                 </header>
         </>
