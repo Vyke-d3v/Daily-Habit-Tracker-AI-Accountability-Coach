@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" width="680" height="200">
+<circle cx="110" cy="100" r="52" fill="none" stroke="#A9784B" stroke-width="8"/>
+<polygon points="110,50 100,72 120,72" fill="#ED93B1"/>
+<circle cx="110" cy="48" r="4" fill="#FAC775"/>
+<path d="M108,74 C120,88 122,108 114,124 C109,132 103,132 98,124 C92,108 94,88 106,74 Z" fill="#E8593C"/>
+<circle cx="105" cy="104" r="2.5" fill="#4A1B0C"/><circle cx="113" cy="104" r="2.5" fill="#4A1B0C"/>
+<path d="M104,112 Q110,117 116,112" stroke="#4A1B0C" stroke-width="2" fill="none" stroke-linecap="round"/>
+<text x="110" y="175" text-anchor="middle" font-size="13" fill="#5F5E5A" font-family="sans-serif">7-day streak</text>
+
+<circle cx="280" cy="100" r="52" fill="none" stroke="#B4B2A9" stroke-width="8"/>
+<path d="M278,74 C290,88 292,108 284,124 C279,132 273,132 268,124 C262,108 264,88 276,74 Z" fill="#E8593C"/>
+<rect x="266" y="98" width="14" height="8" rx="3" fill="#2C2C2A"/>
+<rect x="284" y="98" width="14" height="8" rx="3" fill="#2C2C2A"/>
+<line x1="280" y1="102" x2="284" y2="102" stroke="#2C2C2A" stroke-width="2"/>
+<path d="M274,116 Q280,121 286,116" stroke="#4A1B0C" stroke-width="2" fill="none" stroke-linecap="round"/>
+<text x="280" y="175" text-anchor="middle" font-size="13" fill="#5F5E5A" font-family="sans-serif">30-day streak</text>
+
+<circle cx="450" cy="100" r="52" fill="none" stroke="#EF9F27" stroke-width="8"/>
+<polygon points="436,72 442,58 450,68 458,58 464,72" fill="#EF9F27"/>
+<circle cx="442" cy="66" r="2.5" fill="#633806"/><circle cx="450" cy="62" r="2.5" fill="#633806"/><circle cx="458" cy="66" r="2.5" fill="#633806"/>
+<path d="M448,74 C460,88 462,108 454,124 C449,132 443,132 438,124 C432,108 434,88 446,74 Z" fill="#E8593C"/>
+<circle cx="444" cy="104" r="2.5" fill="#4A1B0C"/><circle cx="452" cy="104" r="2.5" fill="#4A1B0C"/>
+<path d="M444,112 Q450,117 456,112" stroke="#4A1B0C" stroke-width="2" fill="none" stroke-linecap="round"/>
+<text x="450" y="175" text-anchor="middle" font-size="13" fill="#5F5E5A" font-family="sans-serif">100-day streak</text>
+
+<circle cx="610" cy="100" r="52" fill="none" stroke="#7F77DD" stroke-width="8"/>
+<path d="M608,74 C620,88 622,108 614,124 C609,132 603,132 598,124 C592,108 594,88 606,74 Z" fill="#E8593C"/>
+<circle cx="604" cy="104" r="2.5" fill="#4A1B0C"/><circle cx="612" cy="104" r="2.5" fill="#4A1B0C"/>
+<path d="M604,112 Q610,117 616,112" stroke="#4A1B0C" stroke-width="2" fill="none" stroke-linecap="round"/>
+<polygon points="600,140 610,128 600,120" fill="#7F77DD"/>
+<polygon points="620,140 610,128 620,120" fill="#7F77DD"/>
+<circle cx="610" cy="128" r="4" fill="#FAC775"/>
+<text x="610" y="175" text-anchor="middle" font-size="13" fill="#5F5E5A" font-family="sans-serif">perfect month</text>
+</svg>
