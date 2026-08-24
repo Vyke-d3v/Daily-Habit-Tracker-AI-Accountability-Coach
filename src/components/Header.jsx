@@ -3,7 +3,7 @@
 // import "../styles/header.css";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, House, BookOpenText, ListChecks, User, Sidebar } from 'lucide-react';
+import { Menu, X, House, BookOpenText, ListChecks, User } from 'lucide-react';
 
 import logo from '../assets/full-logo copy.png';
 import useCheckinLabel from '../hooks/useCheckinLabel'; // pull your label logic out — see note below
