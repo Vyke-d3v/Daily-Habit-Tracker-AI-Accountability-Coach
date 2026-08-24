@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { Menu, X, House, BookOpenText, ListChecks, User } from 'lucide-react';
 
 import logo from '../assets/full-logo copy.png';
-import useCheckinLabel from '../hooks/useCheckinLabel'; // pull your label logic out — see note below
+import useCheckinLabel from '../hooks/useCheckinLabel';
 
 const navLinks = [
     { to: '/landing', label: 'Home', icon: House },
