@@ -12,6 +12,7 @@
   "dependencies": {
     "@heroui/react": "^3.2.4",
     "@heroui/styles": "^3.2.4",
+    "@tailwindcss/vite": "^4.3.3",
     "firebase": "^12.15.0",
     "lucide-react": "^1.33.0",
     "react": "^19.2.6",
