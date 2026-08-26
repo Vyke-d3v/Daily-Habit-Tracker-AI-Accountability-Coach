@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+ const links
 function Landing(){
     return(
         <div className="Landingcomponent">
