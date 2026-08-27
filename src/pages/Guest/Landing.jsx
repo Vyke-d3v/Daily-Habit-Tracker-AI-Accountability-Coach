@@ -5,7 +5,7 @@ function Landing(){
         <div className="Landingcomponent">
             
             {/* <h1>Dashboard</h1> */}
-            <Typography type='h2' className="landingHeader">
+            <Typography type='h2' className="landingHeader align-center">
                 Build better habits with a digital performance journal and AI coaching.
             </Typography>
             <Typography type='p' className="border-l-background-inverse, ">
