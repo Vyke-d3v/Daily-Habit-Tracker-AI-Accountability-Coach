@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
- const links
+import { Typography } from "@heroui/react";
 function Landing(){
     return(
         <div className="Landingcomponent">
             
             {/* <h1>Dashboard</h1> */}
-            <p>Welcome to Daily Habit Tracker!
+            <Typography type='h2' className="landingHeader">
+                Build better habits with a digital performance journal and AI coaching.
+            </Typography>
+            <Typography type='p' className="border-l-background-inverse, ">
                 A digital performance journal where users log daily habits and write a brief text
                 entry checking in, receiving personalized coaching and habit analysis from an AI.
-            </p>
+            </Typography>
 
             <div className="getStartedBUtton">
                 {/* <a href="register">GET STARTED</a> */}
