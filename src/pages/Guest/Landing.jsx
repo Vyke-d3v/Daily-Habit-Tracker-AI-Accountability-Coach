@@ -9,7 +9,7 @@ function Landing(){
                 Build better habits with a digital performance journal and AI coaching.
             </Typography>
             <Typography type='p' className="border-l-background-inverse, ">
-                A digital performance journal where users log daily habits and write a brief text
+                A digital performance journal where users log daily habits and write a brief tex
                 entry checking in, receiving personalized coaching and habit analysis from an AI.
             </Typography>
 
