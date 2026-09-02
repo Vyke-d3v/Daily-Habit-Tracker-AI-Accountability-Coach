@@ -5,7 +5,12 @@ import {Button, Form, Input, Label} from "@heroui/react";
 // import {Button, Description, FieldError, Form, Input, Label, Textfield} from "@heroui/react";
 // import {Button, Description, FieldError, Form, Input, Label, Textfield} from "@heroui/react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
+
 function Login (){
+
+    const [formData,setFormData]
     return(
         <>
             <div className="Login-heading">
@@ -22,7 +27,10 @@ function Login (){
                     <Input type="password" name="user-password" id="user-password" placeholder="Eg. echocoach@2026" />
 
                     <Button>
-                        <button type="reset" className="bg-blue-500 text-white px-4 py-2 rounded" variant>Log In</button>
+                        <button type="reset" 
+                        className="
+                    
+                        text-white px-4 py-2 rounded" variant>Log In</button>
                     </Button>
 
                 </Form>
