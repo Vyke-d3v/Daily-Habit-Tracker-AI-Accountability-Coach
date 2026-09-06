@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button, } from "@heroui/react";
 import { Typography } from "@heroui/react";
 function Landing(){
     return(
@@ -14,8 +15,9 @@ function Landing(){
             </Typography>
 
             <div className="getStartedBUtton">
-                {/* <a href="register">GET STARTED</a> */}
-                <Link to="/register">GET STARTED</Link>
+                <Button fullwidth variant="solid" color="bg-green-500">
+                    <Link to="/register">GET STARTED</Link>
+                </Button>
             </div>
         </div>
     )

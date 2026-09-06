@@ -19,10 +19,10 @@ function Login (){
             </div>
             <div className="Login-form">
                 <Form action="Register">
-                    <Label htmlFor="name">Name</Label>
-                    <Input type="text" name="user-name" id="user-name" placeholder="Eg. Vyke Muriithi"/>
+                    <Label htmlFor="name">Username</Label>
+                    <Input type="text" name="user-name" id="user-name" placeholder="Eg. Echocoach_2026"/>
                     <Label htmlFor="email">Email</Label>
-                    <Input type="email" name="user-email" id="user-email" placeholder="Eg. muriithivyke@gmail.com" />
+                    <Input type="email" name="user-email" id="user-email" placeholder="Eg. Echocoach_2026" />
                     <Label htmlFor="password">Password</Label>
                     <Input type="password" name="user-password" id="user-password" placeholder="Eg. echocoach@2026" />
 
@@ -38,7 +38,7 @@ function Login (){
             </div>
             <div className="loginAlt">
                 <p>Or <br/> Continue With Google.</p>
-                <p>You don't have an account? <Link to="register">Register</Link></p>
+                <p>You don't have an account? {" "}<Link to="/register" className="text-blue-600 hover:underline">Register</Link></p>
             </div>
         </>
     );

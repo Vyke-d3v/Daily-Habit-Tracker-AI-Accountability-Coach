@@ -22,6 +22,9 @@ function Register() {
     if (!formData.username.trim()) {
       errors.username = "Enter a valid Username";
     }
+    if (formData.username.length<=0){
+      errors.username = "Username cannot be empty"
+    }
     if (!formData.email.trim()) {
       errors.email = "Email is Required.";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
