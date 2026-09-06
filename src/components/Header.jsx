@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, House, BookOpenText, ListChecks, User } from 'lucide-react';
 
-import logo from '../assets/full-logo copy.png';
+import logo from '../assets/blaze-dht-assets/logo/blaze-logo.svg';
 import useCheckinLabel from '../hooks/useCheckinLabel';
 
 const navLinks = [
@@ -20,9 +20,9 @@ function Header() {
     const label = useCheckinLabel();
 
     return (
-    <header className="sticky top-0 z-40 w-full border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-lg">
+    <header variant="dark" className="sticky top-0 z-40 w-full border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-lg">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <img src={logo} alt="Daily Habit Tracker" className="h-8" />
+        <img src={logo} alt="Daily Habit Tracker" className="h-15" />
 
         <span className="hidden rounded-full bg-neutral-800 px-3 py-1 text-sm text-neutral-200 sm:inline-block">
             {label}

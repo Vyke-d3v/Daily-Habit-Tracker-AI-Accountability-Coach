@@ -1,0 +1,36 @@
+:root {
+  /* Color */
+  --blaze-ink: #111111;
+  --blaze-paper: #F5F4F0;
+  --blaze-ember: #D9481D;
+
+  /* Typography */
+  --blaze-font-primary: 'Manrope', Arial, Helvetica, sans-serif;
+  --blaze-weight-display: 800;   /* BLAZE wordmark */
+  --blaze-weight-tag: 700;       /* DHT tag, small caps labels */
+  --blaze-weight-body: 500;
+
+  /* Border radius */
+  --blaze-radius-symbol-outer: 22px;  /* at 200px symbol viewBox scale */
+  --blaze-radius-symbol-notch: 10px;
+  --blaze-radius-icon-tile: 42px;     /* at 200px icon viewBox scale, ~21% */
+  --blaze-radius-ui: 8px;             /* general UI corner radius, not part of the mark */
+
+  /* Spacing (4px base scale) */
+  --blaze-space-1: 4px;
+  --blaze-space-2: 8px;
+  --blaze-space-3: 16px;
+  --blaze-space-4: 24px;
+  --blaze-space-5: 32px;
+  --blaze-space-6: 48px;
+
+  /* Logo sizing */
+  --blaze-symbol-size-sm: 24px;
+  --blaze-symbol-size-md: 32px;
+  --blaze-symbol-size-lg: 48px;
+  --blaze-logo-height-sm: 20px;
+  --blaze-logo-height-md: 28px;
+  --blaze-logo-height-lg: 40px;
+
+  /* Shadows: intentionally none. The mark and UI are flat by design. */
+}
