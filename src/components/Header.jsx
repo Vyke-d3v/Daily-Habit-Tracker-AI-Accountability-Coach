@@ -20,7 +20,7 @@ function Header() {
     const label = useCheckinLabel();
 
     return (
-    <header variant="dark" className="sticky top-0 z-40 w-full border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-lg">
+    <header variant="" className="sticky top-0 z-40 w-full border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-lg">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <img src={logo} alt="Daily Habit Tracker" className="h-15" />
 

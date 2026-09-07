@@ -1,3 +1,10 @@
+import { useState } from "react";
+
+const [task, setTask] = useState([]);
+const [newTask, setNewTask] = useState("");
+
+
+
 function Habits (){
     return(
         <>
