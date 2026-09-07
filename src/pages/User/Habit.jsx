@@ -4,7 +4,7 @@ const [habit, setHabit] = useState([]);
 const [newHabit, setNewHabit] = useState("");
 
 function handleInputChange(event){
-
+    setNewHabit(event.target.value);
 }
 
 function addHabit(){
@@ -23,13 +23,18 @@ function moveHabitDown(index){
 
 }
 
-function Habits (){
+function Habit (){
     return(
         <>
         <h2>Welcome to your habit Tracker.</h2>
-        <description>Enter your daily habits here.</description>
-        <input type="button" value="add-habit"></input></>
+        <description>Lets start by writting down the Habit you want to track.</description>
+        <input 
+            type="button" 
+            placeholder="Enter your Habit here"
+            value={newHabit}
+            onChange={handleInputChange}>
+        </input></>
     );
 }
 
-export default Habits;
+export default Habit;

@@ -13,6 +13,7 @@ import Login from './pages/Guest/Login';
 
 //Import User Files.
 import Profile from './pages/User/Profile';
+import Habit from './pages/User/Habit';
 import ProtectedRoutes from './utils/ProtectedRoutes';
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
           <Route path='/' element={<Landing/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/profile" element={<Profile/>}/>
+          {/* <Route path="/habits" element={<Habit/>}/> */}
             <Route element={<ProtectedRoutes/>}>
-            
+              
             </Route>
           <Route path='/register' element={<Register/>}/>
           <Route path="/landing" element={<Landing/>}/>
