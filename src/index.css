@@ -1,14 +1,12 @@
 @import "tailwindcss";
 @import "@heroui/styles";
 
+
 :root{
     background-color: #eef1f6;
-} 
-
-@theme {
-    --color-blaze-ink: #111111;
+        --color-blaze-ink: #111111;
     --color-blaze-paper: #F5F4F0;
     --color-blaze-ember: #D9481D;
 
     --font-blaze: "Manrope", Arial, Helvetica, sans-serif;
-}
+} 
