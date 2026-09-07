@@ -1,9 +1,27 @@
 import { useState } from "react";
 
-const [task, setTask] = useState([]);
-const [newTask, setNewTask] = useState("");
+const [habit, setHabit] = useState([]);
+const [newHabit, setNewHabit] = useState("");
 
+function handleInputChange(event){
 
+}
+
+function addHabit(){
+
+}
+
+function deleteHabit(index){
+
+}
+
+function moveHabitup(index){
+    
+}
+
+function moveHabitDown(index){
+
+}
 
 function Habits (){
     return(
