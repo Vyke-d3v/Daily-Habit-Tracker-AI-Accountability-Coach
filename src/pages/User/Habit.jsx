@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Habit (){
-    
+
 const [habit, setHabit] = useState([]);
 const [newHabit, setNewHabit] = useState("");
 
@@ -38,6 +38,12 @@ function moveHabitDown(index){
                 onClick={addHabit}>
                 Add Habit
             </button>
+
+            <ol>
+                {habit.map((habitItem, index) =>
+                <li></li>
+                )}
+            </ol>
         </>
     );
 }
