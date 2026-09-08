@@ -10,7 +10,10 @@ function handleInputChange(event){
 }
 
 function addHabit(){
-
+    if (newHabit.trim() !==""){
+        setHabit(habit =>[...habit, newHabit])
+        setNewHabit("");
+    }
 }
 
 function deleteHabit(index){
@@ -41,7 +44,26 @@ function moveHabitDown(index){
 
             <ol>
                 {habit.map((habitItem, index) =>
-                <li></li>
+                <li key = {index}>
+                    <span 
+                        className="text">
+                        {habitItem}
+                    </span>
+                    <button
+                    onClick={()=> deleteHabit(index)}>
+                        Delete
+                    </button>
+
+                    <button
+                    onClick={()=> moveHabitup(index)}>
+                        Move Habit Up
+                    </button>
+
+                    <button
+                    onClick={()=> moveHabitDown(index)}>
+                        Move Habit Down
+                    </button>
+                </li>
                 )}
             </ol>
         </>
