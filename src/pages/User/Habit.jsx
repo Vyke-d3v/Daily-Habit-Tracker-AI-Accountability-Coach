@@ -29,11 +29,15 @@ function Habit (){
         <h2>Welcome to your habit Tracker.</h2>
         <description>Lets start by writting down the Habit you want to track.</description>
         <input 
-            type="button" 
+            type="text" 
             placeholder="Enter your Habit here"
             value={newHabit}
-            onChange={handleInputChange}>
-        </input></>
+            onChange={handleInputChange}/>
+            <button 
+                onClick={addHabit}>
+                Add Habit
+            </button>
+        </>
     );
 }
 
