@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+function Habit (){
+    
 const [habit, setHabit] = useState([]);
 const [newHabit, setNewHabit] = useState("");
 
@@ -23,7 +25,6 @@ function moveHabitDown(index){
 
 }
 
-function Habit (){
     return(
         <>
         <h2>Welcome to your habit Tracker.</h2>
