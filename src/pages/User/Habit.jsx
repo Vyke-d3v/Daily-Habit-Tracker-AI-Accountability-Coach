@@ -1,9 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useAuth } from "../../context/useAuth";
 
 function Habit (){
 
-const [habit, setHabit] = useState([]);
+const { user } = useAuth();
+const storageKey = `habits:${user.uid}`;
+const [habit, setHabit] = useState(() => {
+    const savedHabits = localStorage.getItem(storageKey);
+    return savedHabits ? JSON.parse(savedHabits) : [];
+});
 const [newHabit, setNewHabit] = useState("");
+
+useEffect(() => {
+    localStorage.setItem(storageKey, JSON.stringify(habit));
+}, [habit, storageKey]);
 
 function handleInputChange(event){
     setNewHabit(event.target.value);
@@ -46,7 +56,7 @@ function moveHabitDown(index){
     return(
         <>
         <h2>Welcome to your habit Tracker.</h2>
-        <description>Lets start by writting down the Habit you want to track.</description>
+        <p>Lets start by writing down the habit you want to track.</p>
         <input 
             type="text" 
             placeholder="Enter your Habit here"
@@ -78,6 +88,7 @@ function moveHabitDown(index){
                     onClick={()=> moveHabitDown(index)}>
                         Move Habit Down
                     </button>
+                    
                 </li>
                 )}
             </ol>

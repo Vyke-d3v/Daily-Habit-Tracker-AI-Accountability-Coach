@@ -2,6 +2,9 @@
 import { Button, Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@heroui/react";
 import { TextField, Input, Label, FieldError } from "@heroui/react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../services/firebase";
 
 import { useState } from "react";
 
@@ -14,6 +17,9 @@ function Register() {
   });
 
   const [error, setError] = useState({});
+  const [authError, setAuthError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   // Form validation
   const validateForm = () => {
@@ -39,7 +45,7 @@ function Register() {
     return errors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const validationErrors = validateForm();
@@ -49,9 +55,19 @@ function Register() {
       return;
     }
     setError({});
+    setAuthError("");
+    setIsSubmitting(true);
 
-    console.log("Registration was SUCCESSFUL");
-    console.log(formData);
+    try {
+      await createUserWithEmailAndPassword(auth, formData.email, formData.password);
+      navigate("/habits", { replace: true });
+    } catch (firebaseError) {
+      setAuthError(firebaseError.code === "auth/email-already-in-use"
+        ? "An account already exists for this email."
+        : "Unable to create your account. Check your details and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -115,16 +131,14 @@ function Register() {
               <FieldError />
             </TextField>
 
-            <Button type="submit" fullWidth variant="solid" color="secondary">
-              Submit
+            {authError && <p role="alert" className="text-red-600">{authError}</p>}
+            <Button type="submit" fullWidth variant="solid" color="secondary" isDisabled={isSubmitting}>
+              {isSubmitting ? "Creating account..." : "Create account"}
             </Button>
           </form>
         </CardContent>
 
         <CardFooter className="flex flex-col items-center gap-3">
-          <Button type="button" variant="bordered" fullWidth>
-            Continue With Google
-          </Button>
           <p className="text-sm text-gray-500">
             Already have an account?{" "}
             <Link to="/login" className="text-blue-600 hover:underline">
