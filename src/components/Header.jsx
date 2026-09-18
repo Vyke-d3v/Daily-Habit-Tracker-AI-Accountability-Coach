@@ -8,7 +8,7 @@ import { signOut } from 'firebase/auth';
 import { auth } from '../services/firebase';
 import { useAuth } from '../context/useAuth';
 
-import logo from '../assets/blaze-dht-assets/logo/blaze-logo.svg';
+import logo from '../assets/blaze-dht-assets/logo/blaze-logo-dark.svg';
 import useCheckinLabel from '../hooks/useCheckinLabel';
 
 const navLinks = [

@@ -15,7 +15,10 @@ function Landing(){
             </Typography>
 
             <div className="getStartedBUtton">
-                <Button fullwidth variant="solid" color="bg-green-500">
+                <Button
+                fullwidth variant="solid" 
+                color="bg-green-500"
+                >
                     <Link to="/register">GET STARTED</Link>
                 </Button>
             </div>
