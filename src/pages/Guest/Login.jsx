@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../services/firebase";
-import {Logo} from "../../assets/blaze-dht-assets/logo/blaze-symbol.svg"
+// import {logo} from "../../assets/blaze-dht-assets/logo/blaze-symbol.svg"
 
 
 function Login (){
@@ -38,7 +38,7 @@ function Login (){
 
                     <CardHeader className="flex flex-col items-start gap-1">
                         <div className="Login-heading">
-                            <img src={Logo} alt="" />
+                            {/* <img src="../../assets/blaze-dht-assets/logo/blaze-symbol.svg" alt="" /> */}
                             <CardTitle>
                                 <h3>Welcome Back</h3>
                             </CardTitle>

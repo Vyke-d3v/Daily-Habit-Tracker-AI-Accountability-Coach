@@ -15,6 +15,7 @@ import Profile from './pages/User/Profile';
 import Habit from './pages/User/Habit';
 import Coach from './pages/User/Coach';
 import Journal from './pages/User/Journal';
+import Dashboard from './pages/User/Dashboard';
 import ProtectedRoutes from './utils/ProtectedRoutes';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
           <Route path="/landing" element={<Landing/>}/>
+          <Route path='/home' element={<Dashboard/>}/>
           <Route element={<ProtectedRoutes/>}>
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/habits" element={<Habit/>}/>

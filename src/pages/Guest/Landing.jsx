@@ -16,10 +16,14 @@ function Landing(){
 
             <div className="getStartedBUtton">
                 <Button
+                
                 fullwidth variant="solid" 
                 color="bg-green-500"
                 >
-                    <Link to="/register">GET STARTED</Link>
+                    <Link to="/register">Get Started</Link>
+                </Button>
+                <Button fullwidth variant="solid">
+                    <Link to="/home">Get a Free Demo</Link>
                 </Button>
             </div>
         </div>

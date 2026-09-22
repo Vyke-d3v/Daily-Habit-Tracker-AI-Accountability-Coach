@@ -2,7 +2,7 @@ function Footer (){
 
     return (
         <>
-            <footer>
+            <footer className="sticky bottom-0 z-40">
                 <div>
                     <h3>Quick links</h3>
                     <div className="contactlinks">
