@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { Button, } from "@heroui/react";
 import { Typography } from "@heroui/react";
+// import {Eyebrow} from "@heroui/react"
 function Landing(){
     return(
         <div className="Landingcomponent">
-            
+            {/* <Eyebrow> */}
+                <p className="border">Daily Habit Tracker</p>
+            {/* </Eyebrow> */}
             {/* <h1>Dashboard</h1> */}
             <Typography type='h2' className="landingHeader align-center">
+            <span className="eyebrow">BUILD BETTER HABITS</span>
                 Build better habits with a digital performance journal and AI coaching.
             </Typography>
             <Typography type='p' className="border-l-background-inverse, ">
@@ -17,12 +21,11 @@ function Landing(){
             <div className="getStartedBUtton">
                 <Button
                 
-                fullwidth variant="solid" 
-                color="bg-green-500"
+                fullwidth variant="solid" className="bg-orange-400 hover:bg-orange-500" textColor='white'
                 >
-                    <Link to="/register">Get Started</Link>
+                    <Link to="/register">Start Tracking</Link>
                 </Button>
-                <Button fullwidth variant="solid">
+                <Button fullwidth variant="solid" className="bg-orange-400 hover:bg-orange-500">
                     <Link to="/home">Get a Free Demo</Link>
                 </Button>
             </div>

@@ -1,5 +1,5 @@
-
 import { Button, Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@heroui/react";
+
 import { TextField, Input, Label, FieldError } from "@heroui/react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +7,9 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../services/firebase";
 
 import { useState } from "react";
+
+import logo from '../../assets/blaze-dht-assets/logo/blaze-symbol.svg'
+// import Back from "../../components/Buttons/Back";
 
 
 function Register() {
@@ -69,10 +72,24 @@ function Register() {
       setIsSubmitting(false);
     }
   };
+  const navigated=useNavigate();
+  const handlePage= ()=> {
+    if (window.history.length>1){
+      navigated(-1)
+    }
+    else{
+      navigated('/')
+    }
+  };
 
   return (
     <div className="w-full flex justify-center items-center min-h-screen p-4">
+      <div>
+      </div>
       <Card className="w-full max-w-md">
+        <div>
+          <img src={logo} alt="Blaze Logo" className="flex items-center px-30 py-2 h-40"/>
+        </div>
         <CardHeader className="flex flex-col items-start gap-1">
           <CardTitle>Create Your Account</CardTitle>
           <CardDescription>Start tracking your daily Habits.</CardDescription>
@@ -84,7 +101,7 @@ function Register() {
               name="username"
               isInvalid={!!error.username}
               errorMessage={error.username}
-            >
+              >
               <Label>Username</Label>
               <Input
                 type="text"
@@ -93,7 +110,7 @@ function Register() {
                   setFormData((prev) => ({ ...prev, username: e.target.value }))
                 }
                 placeholder="Eg. Echocoach_2026"
-              />
+                />
               <FieldError />
             </TextField>
 
@@ -101,7 +118,7 @@ function Register() {
               name="email"
               isInvalid={!!error.email}
               errorMessage={error.email}
-            >
+              >
               <Label>Email</Label>
               <Input
                 type="email"
@@ -131,8 +148,8 @@ function Register() {
               <FieldError />
             </TextField>
 
-            {authError && <p role="alert" className="text-red-600">{authError}</p>}
-            <Button type="submit" isDisabled={isSubmitting}>
+            {authError && <p role="alert" className="text-red-600" >{authError}</p>}
+            <Button type="submit" isDisabled={isSubmitting} className="flex items-center gap-2 px-3 py-2 bg-orange-600">
               {isSubmitting ? "Creating account..." : "Create account"}
             </Button>
           </form>
@@ -141,10 +158,13 @@ function Register() {
         <CardFooter className="flex flex-col items-center gap-3">
           <p className="text-sm text-gray-500">
             Already have an account?{" "}
-            <Link to="/login" className="text-blue-600 hover:underline">
+            <Link to="/login" className="text-orange-600 hover:underline">
               Log in
             </Link>
           </p>
+            <Button 
+              onClick={handlePage} className="flex items-center gap-2 px-3 py-2 rounded-lg border bg-orange-300 hover:bg-orange-700 transition">Wee rudi nyuma...
+            </Button>
         </CardFooter>
       </Card>
     </div>

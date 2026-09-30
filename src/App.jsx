@@ -18,6 +18,7 @@ import Journal from './pages/User/Journal';
 import Dashboard from './pages/User/Dashboard';
 import ProtectedRoutes from './utils/ProtectedRoutes';
 
+
 function App() {
   
   return (

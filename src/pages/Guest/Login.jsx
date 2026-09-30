@@ -4,10 +4,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../services/firebase";
-// import {logo} from "../../assets/blaze-dht-assets/logo/blaze-symbol.svg"
+// import {back} from ;
+
+import logo from "../../assets/blaze-dht-assets/logo/blaze-symbol.svg"
+// import Back from "../../components/Buttons/Back";
 
 
-function Login (){
+export default function Login (){
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -30,17 +33,28 @@ function Login (){
             setIsSubmitting(false);
         }
     }
+    const navigated=useNavigate();
+    const handlePage= ()=>{
+        if(window.history.length>1){
+            navigated(-1)
+        }
+        else{
+            navigated('/')
+        }
+    }
 
     return(
         <>
         <div className="w-full flex justify-center items-center min-h-screen">
             <Card className="w-full max-w-md" color="">
+                        <div className="flex items-center">
+                            <img src={logo} alt="Blaze DHT logo" className=" flex items-center px-30 py-2 h-40"/>
+                        </div>
 
-                    <CardHeader className="flex flex-col items-start gap-1">
+                    <CardHeader className="flex flex-col items-center gap-1 ">
                         <div className="Login-heading">
-                            {/* <img src="../../assets/blaze-dht-assets/logo/blaze-symbol.svg" alt="" /> */}
-                            <CardTitle>
-                                <h3>Welcome Back</h3>
+                            <CardTitle className="flex items-center ">
+                                <h3 className="">Welcome Back</h3>
                             </CardTitle>
                             <CardDescription>
                                 <p>Start tracking your daily Habits.</p>
@@ -56,7 +70,8 @@ function Login (){
                                 <Input type="password" name="password" id="password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="Your password" required />
 
                                 {error && <p role="alert" className="text-red-600">{error}</p>}
-                                <Button type="submit" isDisabled={isSubmitting}>
+                                <Button type="submit" isDisabled={isSubmitting} 
+                                className="bg-orange-600 hover:bg-amber-800 transition">    
                                     {isSubmitting ? "Logging in..." : "Log In"}
                                 </Button>
 
@@ -66,13 +81,15 @@ function Login (){
                     </CardContent>
                     <CardFooter className="flex flex-col items-center gap-3">
                         <div className="loginAlt">
-                            <p>You don't have an account? {" "}<Link to="/register" className="text-blue-600 hover:underline">Register</Link></p>
+                            <p>You don't have an account? {" "}<Link to="/register" className="text-orange-600 hover:underline">Register</Link></p>
+                        </div>
+                        <div>
+
+                        <Button onClick={handlePage} className="flex items-center gap-2 px-3 py-2 rounded-lg bg-orange-300 hover:bg-orange-700">Wee Rudi Nyumaa</Button>
                         </div>
                     </CardFooter>
             </Card>
         </div>
         </>
     );
-}
-
-export default Login;
+};
