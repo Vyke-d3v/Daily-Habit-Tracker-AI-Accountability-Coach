@@ -5,7 +5,7 @@ function Footer (){
 
     return (
         <>
-            <footer className="w-full border-t border-divider bg-content1 text-foreground">
+            <footer className="w-full border-t border-divider bg-content1 text-foreground bg bg-orange-200">
                 <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
                     <div className="lg:col-span-2">
                         <img src={logo} alt="footer blaze logo" />
