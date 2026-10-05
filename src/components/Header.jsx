@@ -37,7 +37,7 @@ function Header() {
     }
 
     return (
-    <header variant="" className="sticky top-0 z-40 w-full border-b border-neutral-800 bg-neutral-950/70 backdrop-blur-lg">
+    <header variant="" className="sticky top-0 z-40 w-full border-b border-neutral-200 border-r backdrop-blur-lg">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <img src={logo2} alt="Daily Habit Tracker" className="h-15" />
 

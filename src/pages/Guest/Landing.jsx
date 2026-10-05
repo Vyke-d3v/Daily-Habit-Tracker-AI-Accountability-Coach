@@ -19,14 +19,11 @@ function Landing(){
             </Typography>
 
             <div className="getStartedBUtton">
-                <Button
-                
-                fullwidth variant="solid" className="bg-orange-400 hover:bg-orange-500" textColor='white'
-                >
-                    <Link to="/register">Start Tracking</Link>
+                <Button fullwidth variant="solid" className="bg-orange-400 hover:bg-orange-500 border" textColor='white'>
+                    <Link to="/register">Get started free</Link>
                 </Button>
-                <Button fullwidth variant="solid" className="bg-orange-400 hover:bg-orange-500">
-                    <Link to="/home">Get a Free Demo</Link>
+                <Button fullwidth variant="solid" className="bg-ora">
+                    <Link to="/home">Explore Blaze</Link>
                 </Button>
             </div>
         </div>
