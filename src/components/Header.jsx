@@ -7,11 +7,11 @@ import { Menu, X, House, BookOpenText, ListChecks, User } from 'lucide-react';
 import { signOut } from 'firebase/auth';
 import { auth } from '../services/firebase';
 import { useAuth } from '../context/useAuth';
-
 // import { LogOut } from 'lucide-react';
+
 import logo2 from '../assets/blaze-dht-assets/logo/blaze-logo.svg'
 // import logo from '../assets/blaze-dht-assets/logo/blaze-logo-dark.svg';
-import useCheckinLabel from '../hooks/useCheckinLabel';
+// import useCheckinLabel from '../hooks/useCheckinLabel';
 // import Back from './Buttons/Back';
 
 const navLinks = [
@@ -28,7 +28,7 @@ const navLinks = [
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const label = useCheckinLabel();
+    // const label = useCheckinLabel();
     const { user } = useAuth();
 
     async function handleSignOut() {
@@ -41,11 +41,12 @@ function Header() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <img src={logo2} alt="Daily Habit Tracker" className="h-15" />
 
-        <span className="hidden rounded-full bg-neutral-800 px-3 py-1 text-sm text-neutral-200 sm:inline-block">
-            {label}
-        </span>
+        {/* <span className="hidden rounded-full bg-neutral-800 px-3 py-1 text-sm text-neutral-200 sm:inline-block"> */}
+            {/* {label} */}
+        {/* </span> */}
         <div>
             {/* {Back} */}
+            <Link></Link>
         </div>
 
         {user && <nav className="hidden items-center gap-6 md:flex">

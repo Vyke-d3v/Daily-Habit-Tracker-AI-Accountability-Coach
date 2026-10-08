@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 
 //Import Guest files.
-import Landing from './pages/Guest/Landing';
+import Landing from '../src/pages/Guest/LANDING/Landing';
 import Register from './pages/Guest/Register';
 import Login from './pages/Guest/Login';
 

@@ -72,10 +72,11 @@ function Register() {
       setIsSubmitting(false);
     }
   };
+
   const navigated=useNavigate();
   const handlePage= ()=> {
     if (window.history.length>1){
-      navigated(-1)
+      navigated('/')
     }
     else{
       navigated('/')
@@ -88,6 +89,9 @@ function Register() {
       </div>
       <Card className="w-full max-w-md">
         <div>
+            <Button 
+              onClick={handlePage} className="flex items-center gap-2 px-3 py-2 rounded-full border bg-gray-700 hover:bg-orange-500 transition">x
+            </Button>
           <img src={logo} alt="Blaze Logo" className="flex items-center px-30 py-2 h-40"/>
         </div>
         <CardHeader className="flex flex-col items-start gap-1">
@@ -162,9 +166,6 @@ function Register() {
               Log in
             </Link>
           </p>
-            <Button 
-              onClick={handlePage} className="flex items-center gap-2 px-3 py-2 rounded-lg border bg-orange-300 hover:bg-orange-700 transition">Wee rudi nyuma...
-            </Button>
         </CardFooter>
       </Card>
     </div>
