@@ -12,7 +12,7 @@ export default function Product(){
         title:'Read 20 Pages',
         streak: '8 day streak',
         completed: true,
-        icon: 'e',
+        icon: 's',
     ])
     return(
         <>
