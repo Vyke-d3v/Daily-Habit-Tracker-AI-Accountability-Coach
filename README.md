@@ -1,4 +1,4 @@
-# Daily Habit Tracker – AI Accountability Coach
+# Blaze DHT – AI Accountability Coach
 
 > Build consistency through habit tracking. Stay motivated through intelligent accountability.
 
