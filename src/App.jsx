@@ -17,6 +17,7 @@ import Coach from './pages/User/Coach';
 import Journal from './pages/User/Journal';
 import Dashboard from './pages/User/Dashboard';
 import ProtectedRoutes from './utils/ProtectedRoutes';
+import Explore from './pages/Guest/EXPLORE/Explore';
 
 
 function App() {
@@ -30,8 +31,9 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
           <Route path="/landing" element={<Landing/>}/>
-          <Route path='/home' element={<Dashboard/>}/>
+          <Route path="/explore" element={<Explore/>}/>
           <Route element={<ProtectedRoutes/>}>
+            <Route path='/home' element={<Dashboard/>}/>  
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/habits" element={<Habit/>}/>
             <Route path="/coachjournal" element={<Coach/>}/>

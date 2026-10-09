@@ -47,6 +47,7 @@ export default function Login (){
         <>
         <div className="w-full flex justify-center items-center min-h-screen">
             <Card className="w-full max-w-md" color="">
+            <Button onClick={handlePage} className="flex items-center gap-2 px-3 py-4 rounded-full bg-orange-300 hover:bg-orange-700">x</Button>
                         <div className="flex items-center">
                             <img src={logo} alt="Blaze DHT logo" className=" flex items-center px-30 py-2 h-40"/>
                         </div>
@@ -85,7 +86,6 @@ export default function Login (){
                         </div>
                         <div>
 
-                        <Button onClick={handlePage} className="flex items-center gap-2 px-3 py-2 rounded-lg bg-orange-300 hover:bg-orange-700">Wee Rudi Nyumaa</Button>
                         </div>
                     </CardFooter>
             </Card>
