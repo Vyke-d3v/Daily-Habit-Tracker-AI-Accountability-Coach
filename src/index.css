@@ -6,10 +6,18 @@
 
 :root{
     background-color: #f7f6f2;
+    --color-blaze-white: #ffffff;
     --color-blaze-ink: #111111;
     --color-blaze-paper: #F5F4F0;
     --color-blaze-ember: #D9481D;
     --color-blaze-tangerine: #f58f20;
+    
+    /* Social Proof Colors */
+    --color-blaze-unknown: #ffb869;
+    --color-blaze-amber: #fbbf24;
+    --color-blaze-stone: #bec3c8;
+    --colo-blaze-text: #a7b5d1;
 
     --font-blaze: "Manrope", Arial, Helvetica, sans-serif;
 };
+

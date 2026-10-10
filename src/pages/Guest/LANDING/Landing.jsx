@@ -1,6 +1,6 @@
 import Cta from "./Cta";
 import Eyebrow from "./Eyebrow";
-import Referees from "./Referees";
+import Socialproof from "./SocialProof";
 import Product from "../PRODUCTS/Product";
 
 export default function Landing(){
@@ -17,7 +17,7 @@ export default function Landing(){
             Track your daily habits, understand your consistency and get peresonalized accountability whenever you need it.
         </p>
         <Cta />
-        <Referees />
+        <Socialproof />
         <Product/>
     </div>
     </>

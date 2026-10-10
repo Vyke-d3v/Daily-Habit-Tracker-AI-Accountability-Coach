@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Cta() {
     return(
     <>
-    <div className="flex items-center justify-center-safe bg-clip-paddingnpm">
+    <div className="flex items-center gap-2 justify-center">
         <Button className={'bg-orange-600 hover:bg-orange-700 rounded-2xl-md border-2 shadow-sm text-white text-xs flex items-center gap-2 px-3 py-2'}>
             <Link to={'/login'}>Get started free</Link>
             {/* <FontAwesomeIcon icon={FaArrowRight} /> */}
@@ -14,7 +14,7 @@ export default function Cta() {
         <span>
 
         </span>
-        <Button className={'bg-white text-black text-xs border-2 rounded-2xl-md border-black hover:bg-gray-200'}>
+        <Button className={'bg-white border border-gray-200 text-gray-700 text-xs font-medium px-4 py-2 rounded-full shadow-sm hover:bg-gray-200'}>
             <Link to={'/explore'}>Explore Blaze DHT</Link>
         </Button>
     </div>
