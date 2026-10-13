@@ -36,7 +36,7 @@ export default function Login (){
     const navigated=useNavigate();
     const handlePage= ()=>{
         if(window.history.length>1){
-            navigated(-1)
+            navigated('/')
         }
         else{
             navigated('/')
