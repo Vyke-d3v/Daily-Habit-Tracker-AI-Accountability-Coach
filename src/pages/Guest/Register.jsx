@@ -153,7 +153,7 @@ function Register() {
             </TextField>
 
             {authError && <p role="alert" className="text-red-600" >{authError}</p>}
-            <Button type="submit" isDisabled={isSubmitting} className="flex items-center gap-2 px-3 py-2 bg-orange-600">
+            <Button type="submit" isDisabled={isSubmitting} className="flex items-center justify-center gap-2 px-3 py-2 bg-orange-600">
               {isSubmitting ? "Creating account..." : "Create account"}
             </Button>
           </form>

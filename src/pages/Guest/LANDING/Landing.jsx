@@ -8,9 +8,9 @@ export default function Landing(){
     <>
             <Eyebrow/>
         <div>
-            <h1 className="text-8xl justify-center text-center font-bold font-family-sans"> 
-                BUILD HABITS<br/>THAT WILL ACTUALLY<h1 className="text-orange-700 font-bold">
-            STICK
+            <h1 className="text-6xl justify-center text-center font-medium font-family-sans"> 
+                Build habits that<br/> actually <h1 className="text-orange-700 font-medium">
+            stick
             </h1>
         
             </h1>
