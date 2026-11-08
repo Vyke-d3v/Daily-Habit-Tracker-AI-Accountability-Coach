@@ -3,9 +3,10 @@
 export default function Product(){
   return(
   <>
-  <div className='flex items-center justify-center shadow-2xl gap-1.5'>
-    <img src="https://res.cloudinary.com/nxhlzcg5/image/upload/f_auto/q_auto/product.png" alt=' blaze product image'/>
+    <div className='flex items-center justify-center'>
+      <img src="https://res.cloudinary.com/nxhlzcg5/image/upload/f_auto/q_auto/product.png" alt='blaze product image'/>
     
   </div>
-  </>)
+    </>
+)
 }

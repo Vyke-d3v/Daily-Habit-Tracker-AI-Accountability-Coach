@@ -6,6 +6,7 @@
 
 :root{
     background-color: #f7f6f2;
+    --color-blaze-bg: #f7f6f2;
     --color-blaze-white: #ffffff;
     --color-blaze-ink: #111111;
     --color-blaze-paper: #F5F4F0;
@@ -17,7 +18,12 @@
     --color-blaze-amber: #fbbf24;
     --color-blaze-stone: #bec3c8;
     --color-blaze-text: #45484d;
+    --color-blaze-font: #28292a;
+
+    /* Status Dot Colors */
+    --color-blaze-lowOpc: #e75c001f;
+    --color-blaze-orange: #ff6900;
+    --color-blaze-transOrange:#fd6a0100;
 
     --font-blaze: "Manrope", Arial, Helvetica, sans-serif;
 };
-

@@ -46,19 +46,19 @@ export default function Login (){
     return(
         <>
         <div className="w-full flex justify-center items-center min-h-screen">
-            <Card className="w-full max-w-md" color="">
-            <Button onClick={handlePage} className="flex items-center gap-2 px-3 py-4 rounded-full bg-gray-700 hover:bg-orange-500">x</Button>
-                        <div className="flex items-center">
+            <Card className="w-full max-w-md">
+            <Button onClick={handlePage} className="flex items-center gap-2 px-3 py-3 w-1 h-1 rounded-full bg-(--color-blaze-stone) hover:bg-(--color-blaze-amber) text-(--color-blaze-paper)">x</Button>
+                        <div className="flex items-center justify-center">
                             <img src={logo} alt="Blaze DHT logo" className=" flex items-center px-30 py-2 h-40"/>
                         </div>
 
                     <CardHeader className="flex flex-col items-center gap-1 ">
                         <div className="Login-heading">
-                            <CardTitle className="flex items-center ">
-                                <h3 className="">Welcome Back</h3>
+                            <CardTitle className="flex items-center justify-center">
+                                <h3 className="text-4xl">Welcome Back</h3>
                             </CardTitle>
                             <CardDescription>
-                                <p>Start tracking your daily Habits.</p>
+                                <p className="flex items-center justify-center">Start tracking your daily Habits.</p>
                             </CardDescription>
                         </div>
                     </CardHeader>
@@ -72,7 +72,7 @@ export default function Login (){
 
                                 {error && <p role="alert" className="text-red-600">{error}</p>}
                                 <Button type="submit" isDisabled={isSubmitting} 
-                                className="bg-orange-600 hover:bg-amber-800 transition">    
+                                className="bg-orange-600 hover:bg-amber-800 transition flex items-center justify-center">    
                                     {isSubmitting ? "Logging in..." : "Log In"}
                                 </Button>
 

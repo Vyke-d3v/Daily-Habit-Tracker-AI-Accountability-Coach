@@ -9,8 +9,8 @@ export default function Landing(){
     <>
             <Eyebrow/>
         <div>
-            <h1 className="text-6xl justify-center text-center font-medium font-family-sans"> 
-                Build habits that<br/> actually <h1 className="text-orange-700 font-medium text-6xl">Stick</h1>
+            <h1 className="text-8xl justify-center text-center font-bold text-(--color-blaze-text)"> 
+                Start to build <br /> habits that actually<h1 className="text-(--color-blaze-ember) font-bold text-8xl">Stick</h1>
         
             </h1>
         <p className="text- text-center font-family-sans gap-2 px-5 py-10 italic font-stretch-100% text-(--color-blaze-text)">
