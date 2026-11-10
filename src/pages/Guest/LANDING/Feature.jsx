@@ -18,16 +18,17 @@ export default function Feature(){
         </div>
         
         <span className="px-30"> </span>
-    <div className="py-7 px-15flex items-center justify-center px-25">
+    <div className="py-7  flex items-center justify-center px-25">
         <Card className="flex items-center justify-center gap-5 border py-30 px-5 border-(--color-blaze-stone) bg-(--color-blaze-bg)">
         <div className="flex items-center justify-center">
             <div className="px-10">
-                <CardTitle className="text-lg py-4 text-(--color-blaze-tangerine) shadow-sm">
+            
+                <CardTitle className="text-lg py-4 text-(--color-blaze-ink) font-stretch-500% font-bold">
                     Easy Daily, Minus the Friction.
                 </CardTitle>
-                <Typography>See what matters today and Check it off with just One Tap. Simple <br /> enough to use in one tap.</Typography>
+                <Typography className="text-(--color-blaze-text)">See what matters today and Check it off with just One Tap. Simple <br /> enough to use in one tap.</Typography>
             </div>
-            <Card className=" flex items-start justify-center px-30 border bg-(--color-blaze-white) ">
+            <Card className=" flex items-start justify-between px-30 border bg-(--color-blaze-white) ">
                 <div className="flex items-center justify-between shadow-sm">
                     <input type="checkbox" name="" id="" /> 
                     <label htmlFor="">Code for 60 Minutes</label>
@@ -45,9 +46,9 @@ export default function Feature(){
                 </div>
             </Card>
         </div>
-            
         </Card>
     </div>
+    
     </>
 )
 };
