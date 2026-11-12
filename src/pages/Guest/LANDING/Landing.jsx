@@ -9,7 +9,7 @@ export default function Landing(){
     <>
             <Eyebrow/>
         <div>
-            <h1 className="text-8xl justify-center text-center font-bold text-(--color-blaze-text)"> 
+            <h1 className="text-8xl justify-center text-center font-bold text-(--color-blaze-font) font"> 
                 Start to build <br /> habits that actually<h1 className="text-(--color-blaze-ember) font-bold text-8xl">Stick</h1>
         
             </h1>
